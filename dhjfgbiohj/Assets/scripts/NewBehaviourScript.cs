@@ -6,9 +6,9 @@ public class NewBehaviourScript : MonoBehaviour
 {
     private Animator animator;
     private Rigidbody rb;
-    private bool stat = false;
     private bool endanimation = true;
-    public Collider colid; 
+    public Collider colid;
+    
 
     private void Awake()
     {
@@ -20,11 +20,11 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && endanimation)
-        {           
+        
+        if ( Input.GetMouseButtonDown(0) && endanimation && animator.GetBool("Jump") == false ) 
+        {
             endanimation = false;
-            stat = true;
-            animator.SetBool("Att", stat);
+            animator.SetBool("Att1", true);
         }
     }
     private void STAT()
@@ -33,14 +33,14 @@ public class NewBehaviourScript : MonoBehaviour
     }
     private void Stopped()
     {
-        
+
         colid.enabled = false;
-         
-}
+
+    }
     private void Stoppedebd()
     {
-        animator.SetBool("Att", stat);
-        stat = false;
+
+        animator.SetBool("Att1", false);
         endanimation = true;
     }
 }

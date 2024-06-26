@@ -23,6 +23,7 @@ public class MUVMENT : MonoBehaviour
         _animator = GetComponent<Animator>();
         _animator.SetBool("RICKROLL", false);
         //_animation.Stop("Roll");
+        
     }
 
     private void Update()
@@ -31,20 +32,25 @@ public class MUVMENT : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Vector3 DD = transform.TransformDirection(Vector3.down);
+            Vector3 DD1 = transform.TransformDirection(Vector3.down);
 
-            if (Physics.Raycast(transform.position, DD, 2f))
+            if (Physics.Raycast(transform.position, DD1, 3f))
             {
-                _animator.SetBool("Jump", true);
+                if((Physics.Raycast(transform.position, DD1, 3f)))
+                {
+                    _animator.SetBool("Jump", true);
+                }
+                
                 rb.AddForce(transform.up * jump_forse, ForceMode.Impulse);
             }
 
-            if (Physics.Raycast(transform.position, DD, 0.5f))
-            {
-                _animator.SetBool("Jump", false);
-            }
         }
+        Vector3 DD = transform.TransformDirection(Vector3.down);
+        if (Physics.Raycast(transform.position, DD, 0.07f))
+        {
 
+            _animator.SetBool("Jump", false);
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && horizontal != 0)
         {
