@@ -1,5 +1,5 @@
-﻿using GLTF.Schema;
-using UnityEditor.Animations;
+﻿
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class MUVMENT : MonoBehaviour
@@ -12,10 +12,11 @@ public class MUVMENT : MonoBehaviour
     public float spdash = 10f;
     [SerializeField] Animator _animator;
     private bool NORUN = true;
-     float uskor= 1f;
-    
-
+    float uskor= 1f;
+    bool not_end= false; 
+   
     float _rotationSpeed = 6f;
+
 
     void Awake()
     {
@@ -23,20 +24,33 @@ public class MUVMENT : MonoBehaviour
         _animator = GetComponent<Animator>();
         _animator.SetBool("RICKROLL", false);
         //_animation.Stop("Roll");
-        
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.X) && !not_end )
+        {
+            rb.AddForce(transform.right * spdash, ForceMode.Impulse);
+            not_end = true;
+            _animator.SetBool("RICKROLL", true);
+            Debug.Log("жмал");
+        }
+
+        Vector3 DD = transform.TransformDirection(Vector3.down);
+
+        if (!Physics.Raycast(transform.position, DD, 3f))
+        {
+            //
+        }
 
         float horizontal = Input.GetAxis("Horizontal");
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Vector3 DD1 = transform.TransformDirection(Vector3.down);
 
-            if (Physics.Raycast(transform.position, DD1, 3f))
+            if (Physics.Raycast(transform.position, DD1, 2f))
             {
-                if((Physics.Raycast(transform.position, DD1, 3f)))
+                if((Physics.Raycast(transform.position, DD1, 2f)))
                 {
                     _animator.SetBool("Jump", true);
                 }
@@ -45,7 +59,7 @@ public class MUVMENT : MonoBehaviour
             }
 
         }
-        Vector3 DD = transform.TransformDirection(Vector3.down);
+        
         if (Physics.Raycast(transform.position, DD, 0.07f))
         {
 
@@ -88,7 +102,7 @@ public class MUVMENT : MonoBehaviour
     }
     private void stopplay()
     {
-        _animator.SetBool("RICKROLL", true);
-        NORUN = true;
+        _animator.SetBool("RICKROLL", false);
+        not_end = false;
     }
 }
