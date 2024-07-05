@@ -13,8 +13,8 @@ public class MUVMENT : MonoBehaviour
     [SerializeField] Animator _animator;
     private bool NORUN = true;
     float uskor= 1f;
-    bool not_end= false; 
-   
+    bool not_end= false;
+    public bool app = false;
     float _rotationSpeed = 6f;
 
 
@@ -38,10 +38,16 @@ public class MUVMENT : MonoBehaviour
 
         Vector3 DD = transform.TransformDirection(Vector3.down);
 
-        if (!Physics.Raycast(transform.position, DD, 3f))
+        if (!Physics.Raycast(transform.position, DD, 4f) && !app)
         {
-            //
+            rb.velocity = Vector3.zero;
+            app = true;
         }
+        else if (Physics.Raycast(transform.position, DD, 4f))
+        {
+            app = false;
+        }
+
 
         float horizontal = Input.GetAxis("Horizontal");
         if (Input.GetKeyDown(KeyCode.Space))
@@ -50,11 +56,8 @@ public class MUVMENT : MonoBehaviour
 
             if (Physics.Raycast(transform.position, DD1, 2f))
             {
-                if((Physics.Raycast(transform.position, DD1, 2f)))
-                {
-                    _animator.SetBool("Jump", true);
-                }
-                
+                _animator.SetBool("Jump", true);
+
                 rb.AddForce(transform.up * jump_forse, ForceMode.Impulse);
             }
 
@@ -105,4 +108,5 @@ public class MUVMENT : MonoBehaviour
         _animator.SetBool("RICKROLL", false);
         not_end = false;
     }
+    
 }

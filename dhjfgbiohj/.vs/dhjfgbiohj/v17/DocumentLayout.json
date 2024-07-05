@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\STAGE-1\\dhjfgbiohj\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|d:\\stage-1\\dhjfgbiohj\\assets\\scripts\\zmuvment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\zmuvment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|d:\\stage-1\\dhjfgbiohj\\assets\\jopa\\sripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|solutionrelative:assets\\jopa\\sripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|d:\\stage-1\\dhjfgbiohj\\assets\\jopa\\sripts\\hp_duraka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|solutionrelative:assets\\jopa\\sripts\\hp_duraka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|d:\\stage-1\\dhjfgbiohj\\assets\\scripts\\muvment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\muvment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|D:\\STAGE-1\\dhjfgbiohj\\assets\\scripts\\_90greed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\_90greed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|D:\\STAGE-1\\dhjfgbiohj\\assets\\scripts\\zmuvment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\zmuvment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\STAGE-1\\dhjfgbiohj\\Assets\\movePlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\movePlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|D:\\STAGE-1\\dhjfgbiohj\\assets\\scripts\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA40D1B-1C35-E710-9087-F707018F2DE0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,67 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_90greed.cs",
-              "DocumentMoniker": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\_90greed.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\_90greed.cs",
-              "ToolTip": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\_90greed.cs",
-              "RelativeToolTip": "Assets\\scripts\\_90greed.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T18:01:10.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ZMUVMENT.cs",
-              "DocumentMoniker": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\ZMUVMENT.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\ZMUVMENT.cs",
-              "ToolTip": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\ZMUVMENT.cs",
-              "RelativeToolTip": "Assets\\scripts\\ZMUVMENT.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAgwFkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T17:17:15.875Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "movePlayer.cs",
-              "DocumentMoniker": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\movePlayer.cs",
-              "RelativeDocumentMoniker": "Assets\\movePlayer.cs",
-              "ToolTip": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\movePlayer.cs",
-              "RelativeToolTip": "Assets\\movePlayer.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T17:28:38.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "MUVMENT.cs",
               "DocumentMoniker": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\MUVMENT.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\MUVMENT.cs",
               "ToolTip": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\MUVMENT.cs",
               "RelativeToolTip": "Assets\\scripts\\MUVMENT.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCAAAAAnAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAowG4AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T14:33:56.935Z",
+              "WhenOpened": "2024-07-05T16:53:02.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HP_DURAKA.cs",
+              "DocumentMoniker": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\jopa\\Sripts\\HP_DURAKA.cs",
+              "RelativeDocumentMoniker": "Assets\\jopa\\Sripts\\HP_DURAKA.cs",
+              "ToolTip": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\jopa\\Sripts\\HP_DURAKA.cs",
+              "RelativeToolTip": "Assets\\jopa\\Sripts\\HP_DURAKA.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T16:26:08.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ENEMYAI.cs",
+              "DocumentMoniker": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\jopa\\Sripts\\ENEMYAI.cs",
+              "RelativeDocumentMoniker": "Assets\\jopa\\Sripts\\ENEMYAI.cs",
+              "ToolTip": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\jopa\\Sripts\\ENEMYAI.cs",
+              "RelativeToolTip": "Assets\\jopa\\Sripts\\ENEMYAI.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAIwCYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T16:17:53.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "NewBehaviourScript.cs",
-              "DocumentMoniker": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\NewBehaviourScript.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\NewBehaviourScript.cs",
-              "ToolTip": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\NewBehaviourScript.cs",
-              "RelativeToolTip": "Assets\\scripts\\NewBehaviourScript.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwBcAAABWAAAA",
+              "Title": "_90greed.cs",
+              "DocumentMoniker": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\_90greed.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\_90greed.cs",
+              "ToolTip": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\_90greed.cs",
+              "RelativeToolTip": "Assets\\scripts\\_90greed.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T16:26:55.408Z"
+              "WhenOpened": "2024-07-02T18:01:10.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ZMUVMENT.cs",
+              "DocumentMoniker": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\ZMUVMENT.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\ZMUVMENT.cs",
+              "ToolTip": "D:\\STAGE-1\\dhjfgbiohj\\Assets\\scripts\\ZMUVMENT.cs",
+              "RelativeToolTip": "Assets\\scripts\\ZMUVMENT.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T17:17:15.875Z",
+              "EditorCaption": ""
             }
           ]
         }

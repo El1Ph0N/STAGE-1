@@ -1,19 +1,23 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ZMUVMENT : MonoBehaviour
 {
     private Rigidbody rb;
-    public float speed = 2f;
+    public float speed = 0.5f;
     private Vector3 moveVector;
-    public float jump_forse = 50f;
+    public float jump_forse = 0f;
     bool isGrounded = true;
     public float spdash = 10f;
     [SerializeField] Animator _animator;
     private bool NORUN = true;
     float uskor = 1.4f;
-
+    bool not_end = false;
+    bool app =false;
 
     float _rotationSpeed = 6f;
+
 
     void Awake()
     {
@@ -21,17 +25,30 @@ public class ZMUVMENT : MonoBehaviour
         _animator = GetComponent<Animator>();
         _animator.SetBool("RICKROLL", false);
         //_animation.Stop("Roll");
-
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.X) && !not_end)
+        {
+            rb.AddForce(transform.right * spdash, ForceMode.Impulse);
+            not_end = true;
+            _animator.SetBool("RICKROLL", true);
+            Debug.Log("жмал");
+        }
+
         Vector3 DD = transform.TransformDirection(Vector3.down);
 
-        //if (Physics.Raycast(transform.position, DD, 7f))
-        //{
-        //   rb.velocity = new Vector3(0, 0, 0);
-        //}
+        if (!Physics.Raycast(transform.position, DD, 4f) && !app)
+        {
+            rb.velocity = Vector3.zero;
+            app = true;
+        }
+        else if (Physics.Raycast(transform.position, DD, 4f))
+        {
+            app = false;
+        }
+
 
         float horizontal = Input.GetAxis("Horizontal");
         if (Input.GetKeyDown(KeyCode.Space))
@@ -40,10 +57,7 @@ public class ZMUVMENT : MonoBehaviour
 
             if (Physics.Raycast(transform.position, DD1, 2f))
             {
-                if ((Physics.Raycast(transform.position, DD1, 2f)))
-                {
-                    _animator.SetBool("Jump", true);
-                }
+                _animator.SetBool("Jump", true);
 
                 rb.AddForce(transform.up * jump_forse, ForceMode.Impulse);
             }
@@ -92,7 +106,15 @@ public class ZMUVMENT : MonoBehaviour
     }
     private void stopplay()
     {
-        _animator.SetBool("RICKROLL", true);
-        NORUN = true;
+        _animator.SetBool("RICKROLL", false);
+        not_end = false;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        ENEMYAI eNEMYAI = collision.gameObject.GetComponent<ENEMYAI>();
+        if (eNEMYAI != null)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }

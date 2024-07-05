@@ -68,6 +68,9 @@
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabLogger.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabPlugin.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabUI.cs" />
+    <Compile Include="Assets\jopa\Sripts\ENEMYAI.cs" />
+    <Compile Include="Assets\jopa\Sripts\ENEMYHP.cs" />
+    <Compile Include="Assets\jopa\Sripts\HP_DURAKA.cs" />
     <Compile Include="Assets\scripts\MUVMENT.cs" />
     <Compile Include="Assets\scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\scripts\ZMUVMENT.cs" />
