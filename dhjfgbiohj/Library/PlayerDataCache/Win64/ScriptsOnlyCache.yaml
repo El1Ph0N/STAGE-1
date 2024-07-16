@@ -19,10 +19,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -71,25 +69,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12274}
+      Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 12536}
+      Script: {instanceID: 12538}
     - Class: 114
-      Script: {instanceID: 12814}
+      Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 12970}
+      Script: {instanceID: 12818}
     - Class: 114
-      Script: {instanceID: 13370}
+      Script: {instanceID: 12974}
     - Class: 114
-      Script: {instanceID: 13682}
+      Script: {instanceID: 13374}
     - Class: 114
-      Script: {instanceID: 13946}
+      Script: {instanceID: 13686}
     - Class: 114
-      Script: {instanceID: 14640}
+      Script: {instanceID: 13950}
     - Class: 114
-      Script: {instanceID: 14668}
+      Script: {instanceID: 14644}
     - Class: 114
-      Script: {instanceID: 196078}
+      Script: {instanceID: 14672}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -275,6 +273,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: 27b1590f5fed2c3636ac627b082c67f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ENEMYHP
+  - hash:
+      serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -429,6 +433,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachinePOV
+  - hash:
+      serializedVersion: 2
+      Hash: a603449a01fcf6be3d92601439b23cf2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ENEMYAI
   - hash:
       serializedVersion: 2
       Hash: 2ce2187bbae6f802011f568630bd3d1f
@@ -881,29 +891,17 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 27b1590f5fed2c3636ac627b082c67f7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ENEMYHP
-  - hash:
-      serializedVersion: 2
-      Hash: a603449a01fcf6be3d92601439b23cf2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ENEMYAI
-  - hash:
-      serializedVersion: 2
       Hash: c6ee272e14c8957fdc098cab291f0572
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HP_DURAKA
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: PlayableTrack
   platform: 19
   scenePathNames:
   - Assets/Scenes/Level.unity
-  playerPath: C:/Users/El!Ph0N/Downloads/dhjfgbiohj.exe
+  playerPath: C:/MyGame/Game/dhjfgbiohj.exe

@@ -2,28 +2,25 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class MUVMENT : MonoBehaviour
+public class Muvment : MonoBehaviour
 {
     private Rigidbody rb;
-    public float speed = 0.5f;
+    private float speed = 2f;
     private Vector3 moveVector;
-    public float jump_forse = 0f;
-    bool isGrounded = true;
-    public float spdash = 10f;
+    private float jump_forse = 50f;
+    private float spdash = 30f;
     [SerializeField] Animator _animator;
-    private bool NORUN = true;
-    float uskor= 1f;
-    bool not_end= false;
-    public bool app = false;
-    float _rotationSpeed = 6f;
+    private float uskor= 1f;
+    private bool not_end = false;
+    private bool app = false;
+    private float _rotationSpeed = 6f;
 
 
-    void Awake()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
         _animator.SetBool("RICKROLL", false);
-        //_animation.Stop("Roll");
     }
 
     private void Update()
@@ -98,7 +95,7 @@ public class MUVMENT : MonoBehaviour
         }
 
     }
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         moveVector.x = Input.GetAxis("Horizontal");
         rb.MovePosition(rb.position + moveVector * speed * Time.fixedDeltaTime * uskor);

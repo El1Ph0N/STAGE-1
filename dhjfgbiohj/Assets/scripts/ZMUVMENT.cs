@@ -2,29 +2,27 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ZMUVMENT : MonoBehaviour
+public class ZMuvment : MonoBehaviour
 {
     private Rigidbody rb;
-    public float speed = 0.5f;
+    private float speed = 0.5f;
     private Vector3 moveVector;
-    public float jump_forse = 0f;
-    bool isGrounded = true;
-    public float spdash = 10f;
+    private float jump_forse = 0f;
+    private float spdash = 10f;
     [SerializeField] Animator _animator;
-    private bool NORUN = true;
-    float uskor = 1.4f;
-    bool not_end = false;
-    bool app =false;
+    private float uskor = 1.4f;
+    private bool not_end = false;
+    private bool app =false;
 
-    float _rotationSpeed = 6f;
+    private float _rotationSpeed = 6f;
 
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
+
         _animator.SetBool("RICKROLL", false);
-        //_animation.Stop("Roll");
     }
 
     private void Update()
@@ -33,8 +31,8 @@ public class ZMUVMENT : MonoBehaviour
         {
             rb.AddForce(transform.right * spdash, ForceMode.Impulse);
             not_end = true;
+
             _animator.SetBool("RICKROLL", true);
-            Debug.Log("жмал");
         }
 
         Vector3 DD = transform.TransformDirection(Vector3.down);
@@ -73,12 +71,14 @@ public class ZMUVMENT : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && horizontal != 0)
         {
             uskor = 1.4f;
+
             _animator.SetBool("RUN", true);
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             uskor = 1f;
+
             _animator.SetBool("RUN", false);
         }
 
@@ -107,6 +107,7 @@ public class ZMUVMENT : MonoBehaviour
     private void stopplay()
     {
         _animator.SetBool("RICKROLL", false);
+
         not_end = false;
     }
     private void OnCollisionEnter(Collision collision)
